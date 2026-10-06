@@ -1,23 +1,235 @@
-<html>
- <head>
-   <title>Meu Currículo</title>
- </head>
- <body>
-<h1>NOME: Carlos Victor Ferreira de Oliveira</h1>
+<!DOCTYPE html>
+<!-- ============================================================
+     TEMPLATE — Página pessoal com CSS Grid
+     Programação Web / Introdução às Tecnologias Web — IFAL
+     COMO USAR:
+     1) Copie ESTE index.html para o seu repositório (não mude a estrutura).
+     2) Escolha UM dos 3 temas de CSS (tema-1-indigo.css, tema-2-escuro.css
+        ou tema-3-editorial.css) e salve-o no seu projeto como  estilo.css
+        (é o nome que este HTML carrega logo abaixo).
+     3) Troque os textos marcados com "TROQUE" pelo seu conteúdo.
+     IMPORTANTE: o LAYOUT é feito com CSS Grid e é o mesmo nos 3 temas.
+     Você escolhe a APARÊNCIA (fonte, cores, bordas), não o layout.
+     ============================================================ -->
+<html lang="pt-BR">
 
-<h2>CURSO: Desenvolvimento de Sistemas 921-C</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Pessoal — Seu Nome</title>
+  <!-- Salve o tema escolhido como "estilo.css" (mesma pasta deste arquivo) -->
+  <link rel="stylesheet" href="estilo.css">
+</head>
 
-<img src="Code.jpg" width="150" height="200">
+<body>
+  <div class="pagina">
 
-<h3>DATA DE NASCIMENTO: 10/04/2010</h3>
+    <!-- ====== CABEÇALHO — TROQUE pelo seu nome e sua frase ====== -->
+    <header class="cabecalho">
+      <h1>Carlos Victor Ferreira de Oliveira</h1>
+      <p>Estudante de Sistemas de Informação · IFAL</p>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
 
-<p>Eu me considero alguém criativo, eu apreciso muito ler, eu aprecio livros em um geral.
- <ul>
- <li>Progamação JavaScript iniciante</li>
- <li>Excel básico</li>
- <li>Ingles básico</li>
- <li>Conchecimento baicos da estrutura do computador e de funcionamento</li>
-</ul>
+    <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+    <main class="principal">
+      <section id="sobre" class="cartao">
+        <h2>Sobre mim</h2>
+        <!-- TROQUE por uma breve apresentação sua -->
+        <p>Sou um estudante de Html, CSS e Java Script. Me considero alguém criativo e aprecio a leitura.</p>
+      </section>
+<section id="projetos" class="cartao">
+  <h2>Projetos</h2>
+
+  <!-- Galeria com Grid: cada .projeto é um card -->
+  <div class="projetos">
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/atividade-01.cap4/">
+          Atividade 1 — Tabela Básica
+        </a>
+      </h3>
+      <p>Atividade 1 — Tabela Básica</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/atividade-02.cap4/">
+          Atividade 2 — Tabela Semântica com Mesclagem
+        </a>
+      </h3>
+      <p>Atividade 2 — Tabela Semântica com Mesclagem.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/atividade-03.cap4/">
+          Atividade 3 — Listas Avançadas e Glossário
+        </a>
+      </h3>
+      <p>Atividade 3 — Listas Avançadas e Glossário.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/atividade-04.cap4/">
+          Atividade 4 — Página Multimídia
+        </a>
+      </h3>
+      <p>Atividade 4 — Página Multimídia.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/cap5-ATV01/">
+          Capítulo 5 — Atividade 1
+        </a>
+      </h3>
+      <p>Formulário de Contato.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/cap5-ATV02/">
+          Capítulo 5 — Atividade 2
+        </a>
+      </h3>
+      <p>Cadastro de Usuário.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/cap5-ATV03/">
+          Capítulo 5 — Atividade 3
+        </a>
+      </h3>
+      <p>Matrícula Acadêmica.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/cap5-ATV04/">
+          Capítulo 5 — Atividade 4
+        </a>
+      </h3>
+      <p>Inscrição em Evento.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/cap5-ATV05/">
+          Capítulo 5 — Atividade 5
+        </a>
+      </h3>
+      <p>Pesquisa Acadêmica.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/Cap6-1/">
+          Capítulo 6 — Atividade 1
+        </a>
+      </h3>
+      <p>Cadastro de Aluno.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/Cap6-2/">
+          Capítulo 6 — Atividade 2
+        </a>
+      </h3>
+      <p>Reserva de Mesa.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/Cap6-3/">
+          Capítulo 6 — Atividade 3
+        </a>
+      </h3>
+      <p>Avaliação Semestral.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/Cap6-4/">
+          Capítulo 6 — Atividade 4
+        </a>
+      </h3>
+      <p>Cadastro de Imóvel.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/ATV_CSS_1/">
+          CSS — Atividade 1
+        </a>
+      </h3>
+      <p>Cadastro de Pet com CSS.</p>
+    </article>
+
+
+    <article class="projeto">
+      <h3>
+        <a href="https://cvfo2-arch.github.io/ATV-CSS-2/">
+          CSS — Atividade 2
+        </a>
+      </h3>
+      <p>Refatoração de Seletores e Unidades com CSS.</p>
+    </article>
+
+  </div>
+</section>
+
+    <!-- ====== BARRA LATERAL ====== -->
+    <aside class="lateral">
+      <section class="cartao">
+        <h2>Habilidades</h2>
+        <!-- TROQUE pelas suas habilidades -->
+        <ul class="habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Grid</li>
+          <li>JavaScript</li>
+        </ul>
+      </section>
+
+      <section id="contato" class="cartao">
+        <h2>Contato</h2>
+        <!-- TROQUE pelos seus links -->
+        <ul class="contato">
+          <li>✉️ <a href="cvfo2@aluno.ifal.edu.br"</a></li>
+          <li>🐙 <a href="https://github.com/cvfo2-arch"</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <!-- ====== RODAPÉ — TROQUE o nome ====== -->
+    <footer class="rodape">© 2026 Carlos Victor Ferreira de Oliveira · feito com HTML + CSS Grid</footer>
+
+  </div>
+</body>
+
+</html>
 
   <nav aria-label="Atividades do Capítulo 4">
    <h2>Capítulo 4 — Tabelas, Listas e Mídia</h2>
